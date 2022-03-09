@@ -1,0 +1,147 @@
+
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    height: 100%;
+    padding: 10px 10px 10px 0; 
+    
+}
+
+.logo
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.littlelogo img
+{
+    display: none;
+}
+
+.logo img
+{
+    width: 220px;
+    padding-bottom: 20px;
+}
+
+hr {
+    width: 140px;
+}
+
+.navbartxtandimg:hover {
+    background-color: #FAAE30;
+}
+
+.navbar-links
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.navbar-links ul
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.navbartxtandimg
+{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-left: 10px;
+}
+
+.navbartxtandimg img
+{
+    height: 2rem;
+}
+
+.navbartxtandimg a
+{
+   text-decoration: none;
+}
+
+.navbartxtandimg span
+{
+    padding: 0.55rem;
+    text-decoration: none;
+    font-family: 'Lucida Sans Unicode', sans-serif;
+    font-size: 2rem;
+    color: rgb(23, 69, 144);
+}
+
+
+@media (max-width: 900px)
+{
+    .navbartxtandimg span
+    {
+        display: none;
+    }
+    
+    .navbartxtandimg
+{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+    .logo
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .littlelogo img
+    {
+        width: 120px;
+        padding-bottom: 10px;
+        display: block;
+    }
+
+    .logo img
+    {
+        display: none;
+    }
+
+    .navbartxtandimg img
+    {
+        height: 3rem;
+        padding-bottom: 10px;
+    }
+
+    hr {
+        width: 80px;
+    }
+
+}

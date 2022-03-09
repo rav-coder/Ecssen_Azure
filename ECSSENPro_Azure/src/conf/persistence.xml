@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="ECSSENProPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>models.HotlineData</class>
+    <class>models.Store</class>
+    <class>models.Program</class>
+    <class>models.Organization</class>
+    <class>models.CompanyName</class>
+    <class>models.User</class>
+    <class>models.Role</class>
+    <class>models.Task</class>
+    <class>models.Donation</class>
+    <class>models.FoodDeliveryData</class>
+    <class>models.UserTask</class>
+    <class>models.Team</class>
+    <class>models.PackageType</class>
+    <class>models.ProgramTraining</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://ecssen.mysql.database.azure.com:3306/ecssendb"/>
+      <property name="jakarta.persistence.jdbc.user" value="ecssen"/>
+      <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+      <property name="jakarta.persistence.jdbc.password" value="3cssenPr%22"/>
+    </properties>
+  </persistence-unit>
+</persistence>
